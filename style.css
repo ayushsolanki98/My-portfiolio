@@ -820,6 +820,13 @@ p{
         padding-top: 38px;
         font-size: 60%;
       }
+        
+        .about-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+        
+        
 
       .btn-layout{
         width: 15rem;
