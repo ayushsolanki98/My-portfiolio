@@ -25,6 +25,9 @@
     h1 span {
       color: #facf0f;
     }
+.navbar-brand{
+      font-weight: 700;
+    }
 
     #portfolio,
     #about,
