@@ -10,6 +10,7 @@
       font-size: 100%;
       overflow-x: hidden;
       scroll-behavior: smooth;
+        overflow-x: hidden;
     }
 
     a.disabled {
@@ -813,6 +814,16 @@
         width: 15rem;
       height: 3.5rem;
       align-items: center;
+      }
+        .img-box p , .opacity-low{
+        font-size: 1.5rem !important;
+      }
+p{
+        font-weight: 500;
+      }
+      
+      h5{
+        font-weight: 700;
       }
 
     }
