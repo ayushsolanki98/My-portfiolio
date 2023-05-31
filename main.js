@@ -18,7 +18,7 @@ var btn = document.querySelector('#downloadBtn')
           setTimeout(function () {
             // Create a temporary link element
             const link = document.createElement('a');
-            link.href = 'cv/CV.pdf'; // Replace with the actual URL of your CV file
+            link.href = 'CV.pdf'; // Replace with the actual URL of your CV file
             link.download = 'CV.pdf'; // Specify the filename for the downloaded file
 
             // Simulate a click on the link element to trigger the download
