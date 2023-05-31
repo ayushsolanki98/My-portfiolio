@@ -790,7 +790,7 @@ p{
     /* ----------------Responsive design (Media query)--------------- */
 
 
-    @media (max-width: 375px and 425px) {
+    @media (max-width: 375px) {
       #home-page {
         font-size: 85%;
       }
