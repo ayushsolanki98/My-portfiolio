@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- -----------------Custom Css And Js----------- -->
+
+  <link rel="stylesheet" href="style.css"><!---------Custom css -->
+  <script src="main.js"></script><!---------Custom js -->
+
+  <!-- ----------------------Awesome font 4, 5, 6---------------- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/font-awesome.min.css"
+    integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /><!---------Awesome font new version -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!---------Awesome 4 font for old support -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!---------Awesome 5 font  -->
+
+  <!-- ------------------Jquery and ajax-------------- -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+    integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
+    crossorigin="anonymous"></script><!---------Ajax Libery For typing effect -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> <!---------jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+  <!-- -------------------Bootstrap Css and Js-------------- -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  <!---------Bootstrap 4 Min css -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!---------Bootstrap 4 min js -->
+
+
+
+  <title>AS Portfolio</title>
+</head>
+
+<body>
+
+  <!-- --------------------Main Home Section---------------- -->
+
+  <section id="Home" class="">
+
+    <!-- ----------------Navbar----------------- -->
+
+    <nav class="navbar navbar-expand-lg navbar-light fade-top">
+      <a class="navbar-brand" href="#">AS</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home-page">HOME <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">SERVICE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">PORTFOLIO</a>
+          </li>
+        </ul>
+        <form>
+          <button id="contact-btn" class="bttn popup-btn" type="button" onclick="togglePopup()">Contact me</button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- -------------- Contact Form-------------- -->
+
+    <div id="popup" class="popup-overlay ">
+      <div class="popup-content">
+        <span class="close-button" onclick="togglePopup()">&times;</span>
+        <h2>Contact Form</h2>
+        <form action="submit_contact_form.php" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required><br><br>
+          <input type="email" name="email" placeholder="Your Email" required><br><br>
+          <textarea name="message" placeholder="Your Message" required></textarea><br><br>
+          <input class="submit-btn" type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+
+    <!-- ---------------------Home page Section--------------- -->
+
+    <div id="home-page" class="reveal">
+      <div class="content">
+        <h1 class="typing">HEY, I'M <span>AYUSH SOLANKI</span></h1>
+        <h3>A Frontend Developer</h3>
+        <p>I code beautifully simple things, and I love what I do.</p>
+        <div class="btn-wrapper">
+          <button id="downloadBtn" class="btn-layout">
+            <span class="btn__text btn__starter-text">Download CV</span>
+          </button>
+          <span class="btn__text btn__ender-text">Open File</span>
+        </div>
+      </div>
+      <div class="refrence-img" style="margin: 10px;">
+        <img src="image/4401280-removebg-preview.png" alt="">
+      </div>
+    </div>
+
+    <!-- ---------------About page Section--------------- -->
+
+    <section id="about">
+      <div class="row reveal">
+        <div class="col-lg-12">
+          <div class="center-heading">
+            <h2 class="section-title-y">ABOUT</h2>
+          </div>
+        </div>
+      </div>
+      <div class="about-content reveal fade-left">
+        <div class="about-me">
+          <h3>Who I am ! Get to Know Me</h3>
+          <p>I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the
+            success of the overall product. Check out some of my work in the Projects section.</p>
+          <p>I also like sharing the stuff that I have learned over the years in Web Development so
+            it can help other people of the Dev Community. Feel free to Connect or Follow me on my
+            <a href="https://www.linkedin.com/in/ayush-solanki-480219232">Linkedin</a> where I post useful projects of Web Development
+          </p>
+          <p>I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that
+            matches my skills and experience then contact me.</p>
+          <button id="see-more" class="btn-layout-2">See More</button>
+        </div>
+        <div class="my-skills reveal fade-right">
+          <h3>My Skills</h3>
+          <div class="skill-content">
+            <div class="skills-skill">HTML</div>
+            <div class="skills-skill">CSS</div>
+            <div class="skills-skill">Javascript</div>
+            <div class="skills-skill">Framworks</div>
+            <div class="skills-skill">Responsive Desgin</div>
+            <div class="skills-skill">SCSS</div>
+            <div class="skills-skill">Github</div>
+            <div class="skills-skill">Canva</div>
+            <div class="skills-skill">Excle</div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- ------------------------Service page Section------------- -->
+
+    <section id="services">
+      <div class="container reveal">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="center-heading pb-40">
+              <h2 class="section-title-x">Our Services</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row reveal">
+          <div class="col-lg-3 col-sm-6 reveal">
+            <a href="#" class="disabled services-small-item active">
+              <div class="icon">
+                <img src="image/code.png" alt="">
+              </div>
+              <h5 class="services-title">Web Development</h5>
+              <p>Building user interfaces using HTML, CSS, and JavaScript to create responsive and visually appealing
+                websites and applications.</p>
+              <div class="button">
+                <i class="fa fa-chevron-right"></i>
+              </div>
+            </a>
+            <div class="item-bg"></div>
+          </div>
+          <div class="col-lg-3 col-sm-6 reveal">
+            <a href="#" class="disabled services-small-item">
+              <div class="icon">
+                <img src="image/ux.png" alt="">
+              </div>
+              <h5 class="services-title">Graphic Design</h5>
+              <p> Creating visually appealing designs for products, ads, and branding. Manipulating images, typography,
+                and colors to communicate messages effectively. </p>
+              <div class="button">
+                <i class="fa fa-chevron-right"></i>
+              </div>
+            </a>
+            <div class="item-bg"></div>
+          </div>
+          <div class="col-lg-3 col-sm-6 reveal">
+            <a href="#" class=" disabled services-small-item">
+              <div class="icon">
+                <img src="image/3d-cube.png" alt="">
+              </div>
+              <h5 class="services-title">3D Model</h5>
+              <p>Creating three-dimensional digital representations of objects or scenes using specialized software for
+                various industries and applications. </p>
+              <div class="button">
+                <i class="fa fa-chevron-right"></i>
+              </div>
+            </a>
+            <div class="item-bg"></div>
+          </div>
+          <div class="col-lg-3 col-sm-6 reveal">
+            <a href="#" class=" disabled services-small-item">
+              <div class="icon">
+                <img src="image/shopping.png" alt="">
+              </div>
+              <h5 class="services-title">Ecomm  erce Listing</h5>
+              <p>Creating and managing product listings, optimizing content, pricing, inventory, and handling customer
+                accounts for efficient ecommerce operations.</p>
+              <div class="button">
+                <i class="fa fa-chevron-right"></i>
+              </div>
+            </a>
+            <div class="item-bg"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------Portfoli page section------------------ -->
+
+    <section id="projects" style="background: #fff; padding-bottom: 65px;" class="reveal">
+      <div class="row reveal">
+        <div class="col-lg-12">
+          <div class="center-heading">
+            <h2 class="section-title-z" style="margin-top: 10px;">PORTFOLIO</h2>
+    </div>
+        </div>
+      </div>
+      <div class="filters reveal">
+        <ul>
+          <li data-filter="all" class="active">All</li>
+          <li data-filter="Web">Web</li>
+          <li data-filter="graphic">Graphic</li>
+          <li data-filter="Model">3D Model</li>
+        </ul>
+      </div>
+      <div class="gallery-image">
+        
+        <div class="img-box all portfolio-item Model">
+          <a href="https://instagram.com/blend_mates?igshid=MmIzYWVlNDQ5Yg==" class="pro-link" target="_blank">
+          <img src="image/blender/3.JPG" alt="" />
+          <div class="transparent-box">
+            <div class="caption">
+              <p>Blender 3D</p>
+              <p class="opacity-low">My Setup</p>
+            </div>
+          </div> 
+        </a>
+        </div>
+        
+        <div class="img-box all portfolio-item graphic">
+          <a href="" class="pro-link">
+          <img src="image/graphic/fiverr 2.png" alt="" />
+          <div class="transparent-box">
+            <div class="caption">
+              <p>Photoshop</p>
+              <p class="opacity-low">Product Label</p>
+            </div>
+          </div> 
+        </a>
+        </div>
+
+        <div class="img-box all portfolio-item Model">
+          <a href="https://instagram.com/blend_mates?igshid=MmIzYWVlNDQ5Yg==" class="pro-link" target="_blank">
+          <img src="image/blender/2.JPG" alt="" />
+          <div class="transparent-box">
+            <div class="caption">
+              <p>Blender 3D</p>
+              <p class="opacity-low">Solar System</p>
+            </div>
+          </div> 
+        </a>
+        </div>
+
+        <div class="img-box all portfolio-item Web">
+          <a href="" class="pro-link">
+          <img src="image/web/web2.jpg" alt="" />
+          <div class="transparent-box">
+            <div class="caption">
+              <p>KP Site</p>
+              <p class="opacity-low">A Portfolio Site</p>
+            </div>
+          </div> 
+        </a>
+        </div>
+      
+        <div class="img-box all portfolio-item graphic">
+          <a href="" class="pro-link">
+          <img src="image/graphic/fiverr 5 (1).png" alt="" />
+          <div class="transparent-box">
+            <div class="caption">
+              <p>Photoshop</p>
+              <p class="opacity-low">Product Label Design</p>
+            </div>
+          </div> 
+        </a>
+        </div>
+
+        <div class="img-box all portfolio-item Web">
+          <a href="" class="pro-link">
+          <img src="image/web/web3.jpg" alt="" />
+          <div class="transparent-box">
+            <div class="caption">
+              <p>MyShop</p>
+              <p class="opacity-low">E-commerce site(not host)</p>
+            </div>
+          </div> 
+        </a>
+        </div>
+
+        <div class="img-box all portfolio-item graphic">
+          <a href="" class="pro-link">
+          <img src="image/graphic/fiverr 3.png" alt="" />
+          <div class="transparent-box">
+            <div class="caption">
+              <p>Photoshop</p>
+              <p class="opacity-low">Product Label</p>
+            </div>
+          </div> 
+        </a>
+        </div>
+
+        <div class="img-box all portfolio-item Web">
+          <a href="https://time-honoured-prepo.000webhostapp.com/index.php" class="pro-link" target="_blank">
+          <img src="image/web/web1.jpg" alt="" />
+          <div class="transparent-box">
+            <div class="caption">
+              <p>Ecomm</p>
+              <p class="opacity-low">Shopping site (frontend)</p>
+            </div>
+          </div> 
+        </a>
+        </div>
+
+        <div class="img-box all portfolio-item Model">
+          <a href="https://instagram.com/blend_mates?igshid=MmIzYWVlNDQ5Yg==" class="pro-link" target="_blank">
+          <img src="image/blender/1.JPG" alt="" />
+          <div class="transparent-box">
+            <div class="caption">
+              <p>Blender 3D</p>
+              <p class="opacity-low">Street View</p>
+            </div>
+          </div> 
+        </a>
+        </div>
+    </section>
+
+    <!-- --------------touch me box--------- -->
+    <section class="touchme">
+      <div class="container width reveal">
+        <div class="box">
+          <div class="column">
+            <div class="column level-item">
+              <h1>Touch With Me</h1>
+            </div>
+            <div class="column level-item-">
+              <a href="https://wa.me/qr/63BH3O5HUQUAM1">Get <i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------Footer-------- -->
+
+    <section id="footer">
+      <div class="main-footer">
+        <h1>As</h1>
+        <h3>Live, learn & Repeat</h3>
+        <span>One day make you Sucess</span>
+        <ul class="social">
+          <li><a href="https://twitter.com/AyushSo19028067?t=HX3d47OeC3jwdpQY5luMoA&s=09 " target="_blank">
+              <div><i class="fab fa-twitter"></i></div>
+            </a></li>
+          <li><a href="https://www.linkedin.com/in/ayush-solanki-480219232" target="_blank">
+              <div><i class="fab fa-linkedin-in"></i></div>
+            </a></li>
+          <li><a href="https://github.com/ayushsolanki98" target="_blank">
+              <div><i class="fab fa-github"></i></div>
+            </a></li>
+          <li><a href="#">
+              <div><i class="fab fa-codepen"></i></div>
+            </a></li>
+          <li><a href="https://www.instagram.com/solanki_ayush03/?igshid=ZDc4ODBmNjlmNQ==" target="_blank">
+              <div><i class="fab fa-instagram"></i></div>
+            </a></li>
+        </ul>
+        <h5>Madeby@Ayush</h5>
+      </div>
+    </section>
+</body>
+<script src="main.js"></script>
+
+</html>
